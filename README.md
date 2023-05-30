@@ -44,7 +44,7 @@ $t->check();
 
 untuk memastikan data slalu update library ini mengharuskan terhubung ke internet, namun opsi untuk menggunakan offline juga tersedia.
 
-pastikan sudah mendownload [calendar.json](https://github.com/guangrei/Json-Indonesia-holidays/raw/master/calendar.json)
+pastikan sudah mendownload [calendar.json](https://raw.githubusercontent.com/guangrei/APIHariLibur_V2/main/calendar.min.json)
 
 
 ```php
