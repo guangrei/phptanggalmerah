@@ -28,7 +28,7 @@ class TanggalMerah
         $this->event = [];
         $this->date = new DateTime("now", $tz);
         if (!isset($local)) {
-            $r = file_get_contents("https://github.com/guangrei/Json-Indonesia-holidays/raw/master/calendar.json");
+            $r = file_get_contents("https://raw.githubusercontent.com/guangrei/APIHariLibur_V2/main/calendar.min.json");
             $this->data = json_decode($r, true);
         } else {
             $r = file_get_contents($local);
@@ -61,9 +61,8 @@ class TanggalMerah
     
     public function is_holiday() : bool
     {
-        $check = isset($this->data[$this->date->format("Ymd")])?true:false;
-        if ($check) {
-            $this->event[] = $this->data[$this->date->format("Ymd")]['deskripsi'];
+        if (isset($this->data[$this->date->format("Y-m-d")]) && $this->data[$this->date->format("Y-m-d")]['holiday']) {
+            $this->event[] = implode(" | ", $this->data[$this->date->format("Y-m-d")]['summary']);
             return true;
         } else {
             return false;
