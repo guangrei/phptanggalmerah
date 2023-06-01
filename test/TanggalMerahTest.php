@@ -8,7 +8,7 @@ final class TanggalMerahTest extends TestCase
     {
         $this->pt = new \Grei\TanggalMerah();
     }
-    protected function tearDownAfterClass(): void
+    protected function tearDown(): void
     {
         $this->pt = null;
     }
