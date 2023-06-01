@@ -6,11 +6,11 @@ final class TanggalMerahTest extends TestCase
     private $pt;
     public static function setUpBeforeClass(): void
     {
-        self::pt = new \Grei\TanggalMerah();
+        self::$pt = new \Grei\TanggalMerah();
     }
     public static function tearDownAfterClass(): void
     {
-        self::pt = null;
+        self::$pt = null;
     }
     public function test_check()
     {
