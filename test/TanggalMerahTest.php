@@ -3,14 +3,14 @@
 use PHPUnit\Framework\TestCase;
 final class TanggalMerahTest extends TestCase
 {
-    private static $pt;
-    public static function setUpBeforeClass(): void
+    private $pt;
+    protected function setUp(): void
     {
-        self::$pt = new \Grei\TanggalMerah();
+        $this->pt = new \Grei\TanggalMerah();
     }
-    public static function tearDownAfterClass(): void
+    protected function tearDownAfterClass(): void
     {
-        self::$pt = null;
+        $this->pt = null;
     }
     public function test_check()
     {
