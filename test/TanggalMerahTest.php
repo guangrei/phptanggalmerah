@@ -3,7 +3,7 @@
 use PHPUnit\Framework\TestCase;
 final class TanggalMerahTest extends TestCase
 {
-    private $pt;
+    private static $pt;
     public static function setUpBeforeClass(): void
     {
         self::$pt = new \Grei\TanggalMerah();
