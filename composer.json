@@ -3,11 +3,11 @@
     "description": "indonesia holiday checker (include sunday)",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://ipynb.wordpress.com",
+    "homepage": "https://guangrei.github.io",
     "authors": [
         {
             "name": "guangrei",
-            "email": "grei@tuta.io"
+            "email": "myawn@pm.me"
         }
     ],
     "minimum-stability": "dev",

@@ -1,4 +1,4 @@
-[![status workflow](https://github.com/guangrei/phptanggalmerah/actions/workflows/php.yml/badge.svg)](https://github.com/guangrei/phptanggalmerah/actions)
+[![status workflow test](https://github.com/guangrei/phptanggalmerah/actions/workflows/php.yml/badge.svg)](https://github.com/guangrei/phptanggalmerah/actions) [![status workflow build](https://github.com/guangrei/phptanggalmerah/actions/workflows/release.yml/badge.svg)](https://github.com/guangrei/phptanggalmerah/actions)  [![install](https://img.shields.io/packagist/dt/grei/tanggalmerah?label=install)](https://packagist.org/packages/grei/tanggalmerah)
 
 phptanggalmerah adalah simple library pengecekan tanggal merah berdasarkan hari minggu dan hari libur nasional (porting dari [pytanggalmerah](https://github.com/guangrei/pytanggalmerah)).
 

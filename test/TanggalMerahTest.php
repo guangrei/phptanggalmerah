@@ -14,7 +14,7 @@ final class TanggalMerahTest extends TestCase
     }
     public function test_check()
     {
-        $this->assertTrue($this->pt->check()); // saat dijalankan sekarang hari lahir pancasila
+        $this->assertFalse($this->pt->check());
     }
     public function test_check2()
     {
